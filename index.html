@@ -1,0 +1,17 @@
+<script>
+let listaDeNomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"];
+let nomesComecamComA = [];
+let demaisNomes = [];
+
+
+
+for (let nome of listaDeNomes) {
+    if (nome.charAt(0) === "A") {
+        nomesComecamComA.push(nome);             
+    } else {
+        demaisNomes.push(nome);
+    }    
+}
+document.write(`Nomes que começam com A: ${nomesComecamComA.sort().join(",")}</br>`);
+document.write(`Demais nomes: ${demaisNomes.sort().join(",")}`);
+</script>

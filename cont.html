@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    const nomes = parseInt(prompt("Quantos nomes você Quer?"))
+        let listaDeNomes = [];
+        
+        for (contador = 1; contador <= nomes; contador++) {
+            listaDeNomes.push(prompt("Nome:" + contador ));
+    }      
+    document.write(listaDeNomes.join(", ")); 
+</script>
